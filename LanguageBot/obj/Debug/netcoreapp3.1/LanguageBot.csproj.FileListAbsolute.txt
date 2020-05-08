@@ -1,0 +1,16 @@
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\bin\Debug\netcoreapp3.1\LanguageBot.exe
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\obj\Debug\netcoreapp3.1\LanguageBot.csprojAssemblyReference.cache
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\obj\Debug\netcoreapp3.1\LanguageBot.AssemblyInfoInputs.cache
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\obj\Debug\netcoreapp3.1\LanguageBot.AssemblyInfo.cs
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\obj\Debug\netcoreapp3.1\LanguageBot.csproj.CoreCompileInputs.cache
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\bin\Debug\netcoreapp3.1\LanguageBot.deps.json
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\bin\Debug\netcoreapp3.1\LanguageBot.runtimeconfig.json
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\bin\Debug\netcoreapp3.1\LanguageBot.runtimeconfig.dev.json
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\bin\Debug\netcoreapp3.1\LanguageBot.dll
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\bin\Debug\netcoreapp3.1\LanguageBot.pdb
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\bin\Debug\netcoreapp3.1\Telegram.Bot.dll
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\obj\Debug\netcoreapp3.1\LanguageBot.csproj.CopyComplete
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\obj\Debug\netcoreapp3.1\LanguageBot.dll
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\obj\Debug\netcoreapp3.1\LanguageBot.pdb
+C:\Users\stwer1998\source\repos\LanguageBot\LanguageBot\obj\Debug\netcoreapp3.1\LanguageBot.genruntimeconfig.cache
