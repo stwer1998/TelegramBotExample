@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
+using Microsoft.Extensions.DependencyInjection;
+using LanguageBot.DataBase;
 
 namespace LanguageBot
 {
@@ -15,9 +13,11 @@ namespace LanguageBot
         public override string CommandName => "/Static";
 
 
-        public override bool CanUse(long chatId)
+        public override bool CanUse(long chatId,Message message)
         {
-          return Bot.Users.FirstOrDefault(x => x.Id == chatId).PreviousCommand == PreviousCommand;
+            var repo = Depends.Provider.GetService<UserRepository>();
+            var user = repo.GetUserById(chatId);
+            return user.PreviousCommand == PreviousCommand;
         }
         public override Task ExecuteAsync(Message message, TelegramBotClient client)
         {

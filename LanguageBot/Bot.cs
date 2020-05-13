@@ -1,6 +1,5 @@
-﻿using System;
+﻿using MihaZupan;
 using System.Collections.Generic;
-using System.Text;
 using Telegram.Bot;
 
 namespace LanguageBot
@@ -9,7 +8,7 @@ namespace LanguageBot
     {
         private static TelegramBotClient client;
 
-        public static List<User> Users = new List<User>();
+        public static List<CallBackCommand> CallBackCommands;
 
         public static List<Command> Commands;
 
@@ -23,9 +22,13 @@ namespace LanguageBot
                 new StartCommand(),
                 new ChooseLang(),
                 new StartCommand()
-            };           
-            
-            return client= new TelegramBotClient();
+            };
+            CallBackCommands = new List<CallBackCommand>()
+            {
+                new LanguageCallBack()
+            };
+            var socks = new HttpToSocks5Proxy("96.96.33.133",1080);
+            return client= new TelegramBotClient("1145240060:AAGBCPgnDnBHNjgRAo3SdobV2CJxpg7zd1U",socks);
         }
     }
 }

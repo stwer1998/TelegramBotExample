@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 
@@ -23,6 +19,6 @@ namespace LanguageBot
         /// <returns></returns>
         public abstract Task ExecuteAsync(Message message, TelegramBotClient client);
 
-        public abstract bool CanUse(long chatId);
+        public abstract bool CanUse(long chatId,Message message);
     }
 }

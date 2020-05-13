@@ -10,11 +10,10 @@ namespace LanguageBot
     {
         public static async void OnMessageAsync(Message message) 
         {
-            //statistic  vzyal static canuse 
-            if (Bot.Commands.FirstOrDefault(x => x.CommandName == message.Text).CanUse(message.Chat.Id))
+            if (Bot.Commands.FirstOrDefault(x => x.CommandName == message.Text).CanUse(message.Chat.Id,message))
             {
                 var cmd = Bot.Commands.FirstOrDefault(x => x.CommandName == message.Text);
-                cmd.ExecuteAsync(message, Bot.Get());
+                await cmd.ExecuteAsync(message, Bot.Get());
             }
             else 
             {

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using LanguageBot.DataBase;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace LanguageBot
 {
@@ -10,11 +12,13 @@ namespace LanguageBot
     {
         public override string PreviousCommand => "/start";
 
-        public override string CommandName => "/chooseLang";
+        public override string CommandName => "chosenLang";
 
-        public override bool CanUse(long chatId)
+        public override bool CanUse(long chatId,Message message)
         {
-            return Bot.Users.FirstOrDefault(x => x.Id == chatId).PreviousCommand == "/start";
+            var repo = Depends.Provider.GetService<UserRepository>();
+            var user = repo.GetUserById(chatId);
+            return user.PreviousCommand == PreviousCommand;
         }
 
         public override Task ExecuteAsync(Message message, TelegramBotClient client)
